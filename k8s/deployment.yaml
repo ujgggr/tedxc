@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hgv
+  name: cxk
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hgv
+      app: cxk
   template:
     metadata:
       labels:
-        app: hgv
+        app: cxk
     spec:
       containers:
-      - image: okteto.dev/hgv:latest
-        name: hgv
+      - image: okteto.dev/cxk:latest
+        name: cxk
         ports:
         - containerPort: 8080
         env:
