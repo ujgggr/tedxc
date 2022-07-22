@@ -6,15 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dty
+      app: ofoe
   template:
     metadata:
       labels:
-        app: dty
+        app: ofoe
     spec:
       containers:
-      - image: okteto.dev/dty:latest
-        name: dty
+      - image: okteto.dev/ofoe:latest
+        name: ofoe
         ports:
         - containerPort: 8080
         env:
