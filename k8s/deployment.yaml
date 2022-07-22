@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dty
+  name: ofoe
 spec:
   replicas: 1
   selector:
