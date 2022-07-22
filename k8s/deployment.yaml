@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: geag
+  name: nnuy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: geag
+      app: nnuy
   template:
     metadata:
       labels:
-        app: geag
+        app: nnuy
     spec:
       containers:
-      - image: okteto.dev/geag:latest
-        name: geag
+      - image: okteto.dev/nnuy:latest
+        name: nnuy
         ports:
         - containerPort: 8080
         env:
