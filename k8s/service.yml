@@ -10,4 +10,4 @@ spec:
   - name: "uldi"
     port: 8080
   selector:
-    app: 
+    app: uldi
