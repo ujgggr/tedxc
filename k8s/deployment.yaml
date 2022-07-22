@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tdo
+  name: eivv
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: tdo
+      app: eivv
   template:
     metadata:
       labels:
-        app: tdo
+        app: eivv
     spec:
       containers:
-      - image: okteto.dev/tdo:latest
-        name: tdo
+      - image: okteto.dev/eivv:latest
+        name: eivv
         ports:
         - containerPort: 8080
         env:
