@@ -21,14 +21,14 @@ spec:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "mirror.umd.edu"
+          value: "music.163.com"
         - name: Vless_UUID
-          value: "33f165ff-c649-40fb-a186-11cf6e63bdc9"
+          value: "176b1a8a-cbf7-4e2f-905c-1283915fe43f"
         - name: Vless_Path
-          value: "/vlordg"
+          value: "/7kvlis"
         - name: Vmess_UUID
-          value: "33f165ff-c649-40fb-a186-11cf6e63bdc9"
+          value: "176b1a8a-cbf7-4e2f-905c-1283915fe43f"
         - name: Vmess_Path
-          value: "/vmdrdg"
+          value: "/7kvmis"
         - name: Share_Path
           value: "/share233"
