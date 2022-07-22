@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ycni
+  name: emao
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ycni
+      app: emao
   template:
     metadata:
       labels:
-        app: ycni
+        app: emao
     spec:
       containers:
-      - image: okteto.dev/ycni:latest
-        name: ycni
+      - image: okteto.dev/emao:latest
+        name: emao
         ports:
         - containerPort: 8080
         env:
