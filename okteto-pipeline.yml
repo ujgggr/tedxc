@@ -1,3 +1,3 @@
 deploy:
-  - okteto build -t okteto.dev/luia:latest
+  - okteto build -t okteto.dev/tdo:latest
   - kubectl apply -f k8s
