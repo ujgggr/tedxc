@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jiaup
+  name: pgtou
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: jiaup
+      app: pgtou
   template:
     metadata:
       labels:
-        app: jiaup
+        app: pgtou
     spec:
       containers:
-      - image: okteto.dev/jiaup:latest
-        name: jiaup
+      - image: okteto.dev/pgtou:latest
+        name: pgtou
         ports:
         - containerPort: 8080
         env:
