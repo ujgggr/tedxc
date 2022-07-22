@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: yiss
+  name: caomo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: yiss
+      app: caomo
   template:
     metadata:
       labels:
-        app: yiss
+        app: caomo
     spec:
       containers:
-      - image: okteto.dev/yiss:latest
-        name: yiss
+      - image: okteto.dev/caomo:latest
+        name: 
         ports:
         - containerPort: 8080
         env:
