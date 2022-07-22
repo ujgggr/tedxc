@@ -7,7 +7,7 @@ metadata:
 spec:
   type: ClusterIP  
   ports:
-  - name: ""
+  - name: "chti"
     port: 8080
   selector:
     app: chti
