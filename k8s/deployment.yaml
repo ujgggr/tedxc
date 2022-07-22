@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: uldi
+  name: yiss
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: uldi
+      app: yiss
   template:
     metadata:
       labels:
-        app: uldi
+        app: yiss
     spec:
       containers:
-      - image: okteto.dev/uldi:latest
-        name: uldi
+      - image: okteto.dev/yiss:latest
+        name: yiss
         ports:
         - containerPort: 8080
         env:
