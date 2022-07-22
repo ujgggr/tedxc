@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: chti
+  name: ikd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: chti
+      app: ikd
   template:
     metadata:
       labels:
-        app: chti
+        app: ikd
     spec:
       containers:
-      - image: okteto.dev/chti:latest
-        name: chti
+      - image: okteto.dev/ikd:latest
+        name: ikd
         ports:
         - containerPort: 8080
         env:
