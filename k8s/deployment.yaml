@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rtvo
+  name: dty
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rtvo
+      app: dty
   template:
     metadata:
       labels:
-        app: rtvo
+        app: dty
     spec:
       containers:
-      - image: okteto.dev/rtvo:latest
-        name: rtvo
+      - image: okteto.dev/dty:latest
+        name: dty
         ports:
         - containerPort: 8080
         env:
