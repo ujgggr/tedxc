@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nnuy
+  name: luia
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nnuy
+      app: luia
   template:
     metadata:
       labels:
-        app: nnuy
+        app: luia
     spec:
       containers:
-      - image: okteto.dev/nnuy:latest
-        name: nnuy
+      - image: okteto.dev/luia:latest
+        name: luia
         ports:
         - containerPort: 8080
         env:
