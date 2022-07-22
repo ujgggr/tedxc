@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: caomo
+  name: ycni
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: caomo
+      app: ycni
   template:
     metadata:
       labels:
-        app: caomo
+        app: ycni
     spec:
       containers:
-      - image: okteto.dev/caomo:latest
-        name: caomo
+      - image: okteto.dev/ycni:latest
+        name: ycni
         ports:
         - containerPort: 8080
         env:
