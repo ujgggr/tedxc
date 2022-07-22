@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cqt
+  name: aidb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cqt
+      app: aidb
   template:
     metadata:
       labels:
-        app: cqt
+        app: aidb
     spec:
       containers:
-      - image: okteto.dev/cqt:latest
-        name: cqt
+      - image: okteto.dev/aidb:latest
+        name: aidb
         ports:
         - containerPort: 8080
         env:
