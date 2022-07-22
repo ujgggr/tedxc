@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ofoe
+  name: geag
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ofoe
+      app: geag
   template:
     metadata:
       labels:
-        app: ofoe
+        app: geag
     spec:
       containers:
-      - image: okteto.dev/ofoe:latest
-        name: ofoe
+      - image: okteto.dev/geag:latest
+        name: geag
         ports:
         - containerPort: 8080
         env:
