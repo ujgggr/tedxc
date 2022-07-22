@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: eivv
+  name: ckim
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: eivv
+      app: ckim
   template:
     metadata:
       labels:
-        app: eivv
+        app: ckim
     spec:
       containers:
-      - image: okteto.dev/eivv:latest
-        name: eivv
+      - image: okteto.dev/ckim:latest
+        name: ckim
         ports:
         - containerPort: 8080
         env:
