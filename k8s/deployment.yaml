@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aqyy
+  name: cqt
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: aqyy
+      app: cqt
   template:
     metadata:
       labels:
-        app: aqyy
+        app: cqt
     spec:
       containers:
-      - image: okteto.dev/aqyy:latest
-        name: aqyy
+      - image: okteto.dev/cqt:latest
+        name: cqt
         ports:
         - containerPort: 8080
         env:
