@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dvip
+  name: aqyy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dvip
+      app: aqyy
   template:
     metadata:
       labels:
-        app: dvip
+        app: aqyy
     spec:
       containers:
-      - image: okteto.dev/dvip:latest
-        name: dvip
+      - image: okteto.dev/aqyy:latest
+        name: aqyy
         ports:
         - containerPort: 8080
         env:
