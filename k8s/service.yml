@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dvip
+  name: aqyy
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "dvip"
+  - name: "aqyy"
     port: 8080
   selector:
-    app: dvip
+    app: aqyy
