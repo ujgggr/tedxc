@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: cxk
+  name: dal
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "cxk"
+  - name: "dal"
     port: 8080
   selector:
-    app: cxk
+    app: dal
