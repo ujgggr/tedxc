@@ -10,4 +10,4 @@ spec:
   - name: "yiss"
     port: 8080
   selector:
-    app: 
+    app: yiss
