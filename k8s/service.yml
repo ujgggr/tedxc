@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hgv
+  name: cxk
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "hgv"
+  - name: "cxk"
     port: 8080
   selector:
-    app: hgv
+    app: cxk
