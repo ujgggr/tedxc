@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aidb
+  name: bsos
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: aidb
+      app: bsos
   template:
     metadata:
       labels:
-        app: aidb
+        app: bsos
     spec:
       containers:
-      - image: okteto.dev/aidb:latest
-        name: aidb
+      - image: okteto.dev/bsos:latest
+        name: bsos
         ports:
         - containerPort: 8080
         env:
