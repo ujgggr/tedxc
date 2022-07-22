@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: luia
+  name: tdo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: luia
+      app: tdo
   template:
     metadata:
       labels:
-        app: luia
+        app: tdo
     spec:
       containers:
-      - image: okteto.dev/luia:latest
-        name: luia
+      - image: okteto.dev/tdo:latest
+        name: tdo
         ports:
         - containerPort: 8080
         env:
