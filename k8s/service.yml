@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dal
+  name: szh
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "dal"
+  - name: "szh"
     port: 8080
   selector:
-    app: dal
+    app: szh
