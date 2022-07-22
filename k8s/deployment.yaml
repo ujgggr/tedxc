@@ -1,27 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pqg
+  name: dvip
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: pqg
+      app: dvip
   template:
     metadata:
       labels:
-        app: pqg
+        app: dvip
     spec:
       containers:
-      - image: okteto.dev/pqg:latest
-        name: pqg
+      - image: okteto.dev/dvip:latest
+        name: dvip
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "music.163.com"
+          value: "mirror.umd.edu"
         - name: Vless_UUID
           value: "43d6dce9-cb7e-4a7a-95a8-50cc046cf005"
         - name: Vless_Path
