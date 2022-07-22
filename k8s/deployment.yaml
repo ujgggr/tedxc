@@ -21,14 +21,14 @@ spec:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: ""
+          value: "www.ietf.org"
         - name: Vless_UUID
-          value: "273d7707-9bb1-44ff-b24c-b59876344cac"
+          value: "d068fa14-4bfe-4abb-9351-7149a4315211"
         - name: Vless_Path
-          value: "/s233"
+          value: "/vlyna"
         - name: Vmess_UUID
-          value: "273d7707-9bb1-44ff-b24c-b59876344cac"
+          value: "d068fa14-4bfe-4abb-9351-7149a4315211"
         - name: Vmess_Path
-          value: "/s244"
+          value: "/vmyna"
         - name: Share_Path
           value: "/share233"
