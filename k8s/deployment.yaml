@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ikd
+  name: uldi
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ikd
+      app: uldi
   template:
     metadata:
       labels:
-        app: ikd
+        app: uldi
     spec:
       containers:
-      - image: okteto.dev/ikd:latest
-        name: ikd
+      - image: okteto.dev/uldi:latest
+        name: uldi
         ports:
         - containerPort: 8080
         env:
