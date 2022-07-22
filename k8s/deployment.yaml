@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: doqn
+  name: pqg
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: doqn
+      app: pqg
   template:
     metadata:
       labels:
-        app: doqn
+        app: pqg
     spec:
       containers:
-      - image: okteto.dev/doqn:latest
-        name: doqn
+      - image: okteto.dev/pqg:latest
+        name: pqg
         ports:
         - containerPort: 8080
         env:
