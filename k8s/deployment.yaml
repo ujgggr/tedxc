@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dal
+  name: szh
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dal
+      app: szh
   template:
     metadata:
       labels:
-        app: dal
+        app: szh
     spec:
       containers:
-      - image: okteto.dev/dal:latest
-        name: dal
+      - image: okteto.dev/szh:latest
+        name: szh
         ports:
         - containerPort: 8080
         env:
