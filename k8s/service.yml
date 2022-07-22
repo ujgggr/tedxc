@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: aidb
+  name: bsos
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "aidb"
+  - name: "bsos"
     port: 8080
   selector:
-    app: aidb
+    app: bsos
