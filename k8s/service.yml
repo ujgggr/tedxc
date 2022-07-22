@@ -9,5 +9,5 @@ spec:
   ports:
   - name: "caomo"
     port: 8080
-  selector
+  selector:
     app: caomo
