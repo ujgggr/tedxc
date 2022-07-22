@@ -10,4 +10,4 @@ spec:
   - name: "luia"
     port: 8080
   selector:
-    app: 
+    app: luia
