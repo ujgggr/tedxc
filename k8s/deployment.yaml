@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bsos
+  name: rtvo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bsos
+      app: rtvo
   template:
     metadata:
       labels:
-        app: bsos
+        app: rtvo
     spec:
       containers:
-      - image: okteto.dev/bsos:latest
-        name: bsos
+      - image: okteto.dev/rtvo:latest
+        name: rtvo
         ports:
         - containerPort: 8080
         env:
