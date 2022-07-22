@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - image: okteto.dev/chti:latest
-        name: 
+        name: chti
         ports:
         - containerPort: 8080
         env:
