@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: emao
+  name: jabng
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: emao
+      app: jabng
   template:
     metadata:
       labels:
-        app: emao
+        app: jabng
     spec:
       containers:
-      - image: okteto.dev/emao:latest
-        name: emao
+      - image: okteto.dev/jabng:latest
+        name: jabng
         ports:
         - containerPort: 8080
         env:
