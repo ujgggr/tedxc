@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cxk
+  name: dal
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cxk
+      app: dal
   template:
     metadata:
       labels:
-        app: cxk
+        app: dal
     spec:
       containers:
-      - image: okteto.dev/cxk:latest
-        name: cxk
+      - image: okteto.dev/dal:latest
+        name: dal
         ports:
         - containerPort: 8080
         env:
