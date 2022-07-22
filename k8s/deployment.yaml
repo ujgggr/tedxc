@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jabng
+  name: jiaup
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: jabng
+      app: jiaup
   template:
     metadata:
       labels:
-        app: jabng
+        app: jiaup
     spec:
       containers:
-      - image: okteto.dev/jabng:latest
-        name: jabng
+      - image: okteto.dev/jiaup:latest
+        name: jiaup
         ports:
         - containerPort: 8080
         env:
