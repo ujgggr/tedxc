@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pgtou
+  name: doqn
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: pgtou
+      app: doqn
   template:
     metadata:
       labels:
-        app: pgtou
+        app: doqn
     spec:
       containers:
-      - image: okteto.dev/pgtou:latest
-        name: pgtou
+      - image: okteto.dev/doqn:latest
+        name: doqn
         ports:
         - containerPort: 8080
         env:
