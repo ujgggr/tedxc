@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: cqt
+  name: aidb
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "cqt"
+  - name: "aidb"
     port: 8080
   selector:
-    app: cqt
+    app: aidb
